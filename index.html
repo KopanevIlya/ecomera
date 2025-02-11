@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+	<title>Компания «ЭКОМЕРА»</title>
+
+	<!-- Meta-Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- //Meta-Tags -->
+
+	<!-- Custom-Theme-Files -->
+		<!-- Bootstrap-Core-CSS --> <link rel="stylesheet" href="css/bootstrap.min.css" 	type="text/css" media="all">
+		<!-- Page-Styling --> 		<link rel="stylesheet" href="css/style.css" 			type="text/css" media="all">
+		<!-- Gallery-Popup-CSS --> 	<link rel="stylesheet" href="css/chocolat.css" 		type="text/css" media="all">
+	<!-- //Custom-Theme-Files -->
+
+	<!-- Web-Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" 	type="text/css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700" 				type="text/css">
+
+
+	<!-- //Web-Fonts -->
+
+	<!-- Default-JavaScript-File --> <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+
+
+</head>
+<!-- //Head -->
+<style>
+	.navbar-nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.menu__list {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+		flex-direction: row; /* По умолчанию горизонтально */
+	}
+
+	/* Стили для элементов меню */
+	.menu__item {
+		list-style: none;
+		margin: 0 15px;
+	}
+
+	/* На мобильных устройствах делаем колонкой */
+	@media (max-width: 768px) {
+		.menu__list {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+		}
+
+		.menu__item {
+			text-align: center;
+			padding: 10px 0;
+		}
+
+		.menu__link {
+			font-size: 14px; /* Уменьшаем шрифт на мобильных */
+			white-space: nowrap; /* Запрещаем перенос строк */
+		}
+	}
+</style>
+
+
+
+<body>
+
+	<!-- Header -->
+	<div class="header" id="home">
+
+		<!-- Top-Bar -->
+		<div class="top-bar">
+			<div class="container">
+
+				<!-- Logo -->
+				<div class="logo">
+
+					<a href="#"><img class="logonew" src="images/logo.png"></a>
+				</div>
+				<!-- //Logo -->
+
+				<div class="info">
+					<!-- Email -->
+					<div class="email">
+						<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:sales@ecomera.ru">sales@ecomera.ru</a></p>
+					</div>
+					<!-- //Email -->
+
+					<!-- Phone -->
+					<div class="phone">
+						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Телефон : +7 (903) 879-04-99</p>
+					</div>
+					<!-- //Phone -->
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+		</div>
+		<!-- //Top-Bar -->
+
+
+
+		<!-- Slider -->
+		<div class="slider">
+			<div class="callbacks_container">
+
+				<ul class="rslides" id="slider">
+
+					<li>
+						<div class="slider-img">
+							<img src="images/slide-1.jpg" class="img-responsive" alt="Manufactory">
+						</div>
+						<div class="slider-info">
+							<h3>Компания «ЭКОМЕРА»</h3>
+							<div class="underline"></div>
+							<p>Разрабатываем и внедряем  “под ключ” на предприятиях решения для обязательной  маркировки системы <br> «Честный знак»</p>
+							<div class="arrow">
+								<img src="images/slide-icon-1.png" alt="Manufactory">
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="slider-img">
+							<img src="images/slide-2.jpg" class="img-responsive" alt="Manufactory">
+						</div>
+						<div class="slider-info">
+							<h3>Компания «ЭКОМЕРА»</h3>
+							<div class="underline"></div>
+							<p>Разрабатываем и внедряем  “под ключ” на предприятиях решения для обязательной  маркировки системы <br> «Честный знак»</p>
+							<div class="arrow">
+								<img src="images/slide-icon-1.png" alt="Manufactory">
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="slider-img">
+							<img src="images/slide-3.jpg" class="img-responsive" alt="Manufactory">
+						</div>
+						<div class="slider-info">
+							<h3>Компания «ЭКОМЕРА»</h3>
+							<div class="underline"></div>
+							<p>Разрабатываем и внедряем  “под ключ” на предприятиях решения для обязательной  маркировки системы <br> «Честный знак»</p>
+							<div class="arrow">
+								<img src="images/slide-icon-1.png" alt="Manufactory">
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- //Slider -->
+
+	</div>
+	<!-- //Header -->
+
+
+
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Navbar-Collapse -->
+			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+				<nav class="menu menu--francisco">
+					<ul class="nav navbar-nav menu__list">
+						<li class="menu__item"><a href="#about" class="menu__link"><span class="menu__helper">О КОМПАНИИ</span></a></li>
+						<li class="menu__item"><a href="#services" class="menu__link"><span class="menu__helper">ФОРМАТ РАБОТЫ</span></a></li>
+						<li class="menu__item"><a href="#contact" class="menu__link"><span class="menu__helper">КОНТАКТЫ</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Navbar-Collapse -->
+		</div>
+	</nav>
+	<!-- //Navbar -->
+
+
+	<!-- About -->
+	<div class="about" id="about">
+		<div class="container">
+
+			<h1>Компания «ЭКОМЕРА»</h1>
+			<p>Выполняем комплексные проекты по внедрению маркировки под систему Честный знак на промышленных предприятиях</p>
+			<div class="underline1"></div>
+
+			<div class="about-grids">
+				<div class="col-md-6 col-sm-6 about-grid about-info">
+					<h3>Коротко о нас</h3>
+					<p class="about-p-1">
+						Устанавливаем программное обеспечение для маркировки;
+					</p>
+					<p class="about-p-1">
+						Поставляем оборудование для маркировки;
+					</p>
+
+					<p class="about-p-1">
+						Проводим пуско-наладочные работы;
+					</p>
+					<p class="about-p-1">
+						Обучаем персонал работе с системой маркировкой;
+					</p>
+					<p class="about-p-1">
+						Запускаем маркировку на вашем предприятии;
+					</p>
+					<p class="about-p-1">
+						Оказываем поддержку и Сервис (SLA).
+					</p>
+
+
+
+
+					<!-- Explore-Button -->
+<!--					<a class="scroll" href="#portfolio">Портфолио</a>-->
+					<!-- //Explore-Button -->
+
+				</div>
+				<div class="col-md-6 col-sm-6 about-grid about-image">
+					<img src="images/slide-1.jpg" alt="Manufactory">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //About -->
+
+	<!-- Services -->
+	<div class="services" id="services">
+		<div class="container">
+			<h2>Формат работы</h2>
+			<div class="underline1"></div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-1.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Предложение</h4>
+							<div class="underline2"></div>
+							<p>Проводим интервью и выдаем коммерческое предложение</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-7.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Договор</h4>
+							<div class="underline2"></div>
+							<p>Согласовываем решение и готовим договор.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-8.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Оборудование</h4>
+							<div class="underline2"></div>
+							<p>Поставляем оборудование для маркировки.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix d-none d-lg-block"></div> <!-- Разрыв после 3-го блока на десктопе -->
+
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-9.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Программное обеспечение</h4>
+							<div class="underline2"></div>
+							<p>Развертываем программное обеспечение в контуре заказчика.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-10.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Работы</h4>
+							<div class="underline2"></div>
+							<p>Развертываем программное обеспечение в контуре заказчика.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-grid">
+					<div class="services-item text-center">
+						<img src="images/service-icon-11.png" alt="Manufactory">
+						<div class="services-info">
+							<h4>Сервис</h4>
+							<div class="underline2"></div>
+							<p>Оказываем сервис и консультирование</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- Закрываем .row -->
+		</div>
+	</div>
+	<!-- //Services -->
+
+
+	<!-- Contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+
+			<h3>Контакты</h3>
+
+			<div class="underline1"></div>
+
+			<div class="contact-grids">
+
+				<div class="col-md-6 col-sm-6 contact-grid">
+					<h4>Форма обратной связи</h4>
+					<form id="contact-form">
+						<input type="text" name="name" class="text" placeholder="Имя" required>
+						<input type="email" name="email" class="text" placeholder="Email" required>
+						<textarea name="message" placeholder="Сообщение" required></textarea>
+						<input type="submit" class="more_btn" value="Отправить">
+					</form>
+					<p id="form-status"></p>
+
+				</div>
+
+				<div class="col-md-6 col-sm-6 contact-grid">
+					<h4>Контактная информация</h4>
+
+					<div class="contact-phone">
+						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Телефон : +7 (903) 879-04-99</p>
+
+					</div>
+					<div class="contact-email">
+						<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:sales@ecomera.ru">sales@ecomera.ru</a></p>
+
+					</div>
+					<div class="address">
+						<h5>Юридический адрес</h5>
+						<address>
+							<ul>
+								<li>Ивановская область</li>
+								<li>153000</li>
+								<li>г.Иваново</li>
+
+							</ul>
+						</address>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<!-- //Contact -->
+
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+
+			<div class="copyright">
+				<p>&copy; 2025 ЭКОМЕРА</p>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //Footer -->
+
+
+
+	<!-- Custom-JavaScript-File-Links -->
+
+		<!-- Necessary-JavaScript-File-For-Bootstrap --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- Slider-JavaScript -->
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+					$("#slider").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: true,
+						speed: 1000,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+		<!-- //Slider-JavaScript -->
+
+		<!-- Gallery-Tab-JavaScript -->
+			<script src="js/cbpFWTabs.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+						new CBPFWTabs( el );
+					});
+				})();
+			</script>
+		<!-- //Gallery-Tab-JavaScript -->
+
+		<!-- Popup-Box-JavaScript -->
+			<script src="js/modernizr.custom.97074.js"></script>
+			<script src="js/jquery.chocolat.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.gallery-item a').Chocolat();
+				});
+			</script>
+		<!-- //Popup-Box-JavaScript -->
+
+		<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 100,
+						easingType: 'linear'
+					};
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+		<!-- //Slide-To-Top JavaScript -->
+
+		<!-- Smooth-Scrolling-JavaScript -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll, .navbar li a, .footer li a").click(function(event){
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+			</script>
+		<!-- //Smooth-Scrolling-JavaScript -->
+		
+		<!-- FlexSlider-JavaScript -->
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+				$(function(){
+					SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+					$('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+							$('body').removeClass('loading');
+						}
+					});
+				});
+			</script>
+		<!-- //FlexSlider-JavaScript -->
+
+	<!-- //Custom-JavaScript-File-Links -->
+
+
+	<script>
+		document.getElementById("contact-form").addEventListener("submit", function(e) {
+			e.preventDefault(); // Останавливаем стандартную отправку формы
+
+			const formData = new FormData(this); // Собираем данные формы
+
+			const xhr = new XMLHttpRequest();
+			xhr.open("POST", "sendmail.php", true);
+			xhr.onload = function () {
+				if (xhr.status === 200) {
+					document.getElementById("form-status").textContent = xhr.responseText;
+				} else {
+					document.getElementById("form-status").textContent = "Ошибка при отправке формы.";
+				}
+			};
+			xhr.onerror = function () {
+				document.getElementById("form-status").textContent = "Ошибка соединения.";
+			};
+			xhr.send(formData);
+		});
+	</script>
+
+</body>
+<!-- //Body -->
+
+
+
+</html>
