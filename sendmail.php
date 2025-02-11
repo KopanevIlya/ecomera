@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "ilya.kopanev@mail.ru"; // Замените на свой email
+    $to = "sales@ecomera.ru"; // Замените на свой email
     $subject = "Новое сообщение с сайта";
     $body = "Имя: $name\nEmail: $email\n\nСообщение:\n$message";
     $headers = "From: $email" . "\r\n" . "Reply-To: $email" . "\r\n" . "X-Mailer: PHP/" . phpversion();
